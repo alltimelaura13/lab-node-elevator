@@ -6,9 +6,15 @@ class Elevator {
     this.direction = "up";
   }
 
-  start() { }
+  start() {
+  this.interval = setInterval(() =>{
+    this.update()},
+  1000);
+}
 
-  stop() { }
+  stop() {
+  clearInterval(this.interval);
+  }
 
   update() {
   this.log();
@@ -17,9 +23,19 @@ class Elevator {
 
   _passengersLeave() { }
 
-  floorUp() { }
+  floorUp() {
+    if(this.floor < this.MAXFLOOR){
+      this.floor += 1;
+      console.log(this.floor);
+    }
 
-  floorDown() { }
+}
+
+  floorDown() {
+  if(this.floor < 0){
+    this.floor-=1;
+    console.log(this.floor);
+  } }
 
   call() { }
 

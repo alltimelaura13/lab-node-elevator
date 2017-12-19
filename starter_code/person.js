@@ -5,6 +5,8 @@ class Person {
     this.originFloor = originFloor;
     this.destinationFloor = destinationFloor;
   }
+
+  
 }
 
 module.exports = Person;

@@ -37,10 +37,14 @@ class Elevator {
     console.log(this.floor);
   } }
 
-  call() { }
+  call() {
+  }
 
   log() {
   console.log(`Direction: ${this.direction} | Floor: ${this.floor}`) }
 }
+
+
+
 
 module.exports = Elevator;
